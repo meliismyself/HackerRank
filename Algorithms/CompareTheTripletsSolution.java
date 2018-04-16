@@ -12,33 +12,33 @@ public class CompareTheTripletsSolution {
     static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2) {
         /*
          * Write your code here.
-         */       
-        int alice =0;
+         */
+        
+        int alice=0;
         int bob =0;
-        
+    
         if(a0>b0){
-            alice+=1;
+            alice++;
         }else if(a0<b0){
-            bob+=1;
+            bob++;
         }
-        
-        if (a1>b1){
-            alice+=1;
+
+        if(a1>b1){
+            alice++;
         }else if(a1<b1){
-            bob+=1;
+            bob++;
         }
-        
-        if (a2>b2){
-            alice+=1;
-        }else if (a2<b2){
-            bob+=1;
+
+        if(a2>b2){
+            alice++;
+        }else if(a2<b2){
+            bob++;
         }
         
         int result[] = {alice, bob};
         
-        return result;
+        return result;       
     }
-
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
